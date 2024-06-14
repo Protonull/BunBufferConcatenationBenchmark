@@ -24,7 +24,7 @@ group("buffer-concat", () => {
         });
     }
 
-    {
+    { // https://stackoverflow.com/a/60590943
         const [lhs, rhs] = createBuffer(
             (size) => new Uint8Array(size),
             (buffer) => buffer,
@@ -34,7 +34,7 @@ group("buffer-concat", () => {
         });
     }
 
-    {
+    { // https://stackoverflow.com/a/75350604
         const [lhs, rhs] = createBuffer(
             (size) => new Uint8Array(size),
             (buffer) => buffer,
